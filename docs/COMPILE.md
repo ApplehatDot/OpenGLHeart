@@ -25,4 +25,10 @@ but last thing we'll have to do, is to add a ```freeglut.dll``` file to the same
   <img src="images\freegluterror.png">
 </div>
 
+
+## here you have, a self compiled heart project!
+<div align='center'>
+  <img src="images\heartimg.png">
+</div>
+
 ### if you'll have some issues, contact me on discord: *applehat.*
