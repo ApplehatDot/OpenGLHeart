@@ -14,12 +14,17 @@ the app was confirmed working on Windows 98 to Windows 11
   <img src=images\win11.png>
 </div>
 
+# Wanna compile yourself?
+see <a href="">COMPILE.md</a> and compile project yourself.
+
 ## Compiler
-any compiler should work, I used <a href="https://sourceforge.net/projects/mingw/files/Installer/mingw-get-setup.exe/download">MinGW 6.3.0-1 win32</a>
+any compiler should work, I used <a href="https://sourceforge.net/projects/mingw/files/Installer/mingw-get-setup.exe/download">MinGW 6.2.0-1 win32</a>
 
 ## additional Libraries
 freeglut 3.0.0 for MinGW compiler download is <a href="https://www.transmissionzero.co.uk/software/freeglut-devel/">here</a>
 
 ## License
-Code is distributed under MIT License, <a href="">see LICENSE.TXT
+Code is distributed under MIT License, <a href="https://github.com/ApplehatDot/OpenGLHeart/blob/OpenGL/LICENSE.txt">see LICENSE.TXT
+
+
 
