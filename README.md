@@ -14,6 +14,8 @@ the app was confirmed working on Windows 98 to Windows 11
   <img src=images\win11.png>
 </div>
 
+If you got any ideas or tips to make code little bit readable, lmk in here or on discord.
+
 # Wanna compile yourself?
 see <a href="https://github.com/ApplehatDot/OpenGLHeart/blob/main/docs/COMPILE.md">COMPILE.md</a> and compile project yourself.
 
