@@ -15,7 +15,7 @@ the app was confirmed working on Windows 98 to Windows 11
 </div>
 
 # Wanna compile yourself?
-see <a href="">COMPILE.md</a> and compile project yourself.
+see <a href="https://github.com/ApplehatDot/OpenGLHeart/blob/main/docs/COMPILE.md">COMPILE.md</a> and compile project yourself.
 
 ## Compiler
 any compiler should work, I used <a href="https://sourceforge.net/projects/mingw/files/Installer/mingw-get-setup.exe/download">MinGW 6.2.0-1 win32</a>
