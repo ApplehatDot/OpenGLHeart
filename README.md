@@ -1,5 +1,5 @@
-# OpenGL Heart project
-Program written in C, with additional help of freeglut and OpenGL that draws a heart from a mathematical function:
+# Projekt OpenGL Heart
+Program OpenGL napisany w języku C z dodatkową pomocą od biblioteki Freeglut (dla MinGW), który rysuje serce z matematycznej funkcji:
 ```
 f(x) = √x + 0.9√(3.3 - x*x)*sin(a*π*x)
 ```
@@ -7,26 +7,26 @@ f(x) = √x + 0.9√(3.3 - x*x)*sin(a*π*x)
   <img src=images\func.png>
 </div>
 
-the Executable is compiled in 32-bit therefore it's very universal.
-the app was confirmed working on Windows 98 to Windows 11
+Sam program jest skompilowany dla systemów 32-bitowych więc jest uniwersalny.
+Aplikacja działa na systemach od Windows 98 do Windows 11:
 <div align="center">
   <img src=images\win98.png>
   <img src=images\win11.png>
 </div>
 
-If you got any ideas or tips to make code little bit readable, lmk in here or on discord.
+Jak masz pomysł, albo radę co do kodu pisz śmiało tutaj albo na discord.
 
-# Wanna compile yourself?
-see <a href="https://github.com/ApplehatDot/OpenGLHeart/blob/main/docs/COMPILE.md">COMPILE.md</a> and compile project yourself.
+# Chcesz Skompilować samemu?
+zobacz <a href="https://github.com/ApplehatDot/OpenGLHeart/blob/main/docs/COMPILE.md">COMPILE.md</a> i skompiluj samodzielnie.
 
-## Compiler
-any compiler should work, I used <a href="https://sourceforge.net/projects/mingw/files/Installer/mingw-get-setup.exe/download">MinGW 6.2.0-1 win32</a>
+## Kompilator
+każdy kompilator powinien działać, Używam <a href="https://sourceforge.net/projects/mingw/files/Installer/mingw-get-setup.exe/download">MinGW 6.2.0-1 win32</a>
 
-## additional Libraries
-freeglut 3.0.0 for MinGW compiler download is <a href="https://www.transmissionzero.co.uk/software/freeglut-devel/">here</a>
+## Dodatkowe Biblioteki
+link do freeglut 3.0.0 dla MinGW jest <a href="https://www.transmissionzero.co.uk/software/freeglut-devel/">tutaj</a>
 
-## License
-Code is distributed under MIT License, <a href="https://github.com/ApplehatDot/OpenGLHeart/blob/OpenGL/LICENSE.txt">see LICENSE.TXT
+## Licencja
+Kod jest dystrybuowany pod <a href="https://github.com/ApplehatDot/OpenGLHeart/blob/OpenGL/LICENSE.txt">Licencją MIT</a>
 
 
 
