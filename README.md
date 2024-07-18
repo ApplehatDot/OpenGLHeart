@@ -1,4 +1,7 @@
 # Projekt OpenGL Heart
+
+*Dodano port OpenGL_Heart dla systemów Linux! - <a href="https://github.com/ApplehatDot/OpenGLHeart/tree/main/Linux#readme">zobacz plik Linux/README.md</a>*
+
 Program OpenGL napisany w języku C z dodatkową pomocą od biblioteki Freeglut (dla MinGW), który rysuje serce z matematycznej funkcji:
 ```
 f(x) = √x + 0.9√(3.3 - x*x)*sin(a*π*x)
