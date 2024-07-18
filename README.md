@@ -7,14 +7,14 @@ Program OpenGL napisany w języku C z dodatkową pomocą od biblioteki Freeglut 
 f(x) = √x + 0.9√(3.3 - x*x)*sin(a*π*x)
 ```
 <div align="center">
-  <img src="images\func.png">
+  <img src="images/func.png">
 </div>
 
 Sam program jest skompilowany dla systemów 32-bitowych więc jest uniwersalny.
 Aplikacja działa na systemach od Windows 98 do Windows 11:
 <div align="center">
-  <img src="images\win98.png">
-  <img src="images\win11.png">
+  <img src="images/win98.png">
+  <img src="images/win11.png">
 </div>
 
 Jak masz pomysł, albo radę co do kodu pisz śmiało tutaj albo na discord.
