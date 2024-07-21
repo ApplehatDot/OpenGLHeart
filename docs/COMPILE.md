@@ -6,7 +6,7 @@ jeżeli chcesz używać innego kompilatora, to użyj twoja decyzja (jednak zalec
 Po ustawieniu środowiska, musisz wyodrębnić pliki freeglut 3.0.0 (dla MinGW) którego link do pobrania <a href="https://www.transmissionzero.co.uk/software/freeglut-devel/">jest tutaj.</a>
 Co ja zrobiłem to skopiowałem plik freeglut.dll w tym samym folderze gdzie będzie nasz skompilowany program, a pliki freeglut są w ```C:\MinGW\freeglut\```:
 <div align='center'>
-  <img src="images\freeglutdir.png">
+  <img src="images/freeglutdir.png">
 </div>
 
 i wyodrębnij pliki repozytorium do folderu
@@ -22,13 +22,13 @@ gcc -o serce.exe serce.o icon.res -L"C:\MinGW\freeglut" -lfreeglut -lopengl32 -l
 po uruchomieniu pliku *.bat projekt zostanie skompilowany.
 ostatnią rzeczą którą trzeba zrobić to dodane pliku```freeglut.dll``` do takiego samego folderu. Jak plik nie będzie skopiowany, ukaże się błąd:
 <div align='center'>
-  <img src="images\freegluterror.png">
+  <img src="images/freegluterror.png">
 </div>
 
 
 ## gratuluje, Skompilowałeś projekt samodzielnie!
 <div align='center'>
-  <img src="images\heartimg.png">
+  <img src="images/heartimg.png">
 </div>
 
 ### jak będziesz potrzebował pomocy, napisz tutaj albo napisz do mnie na discordzie: *applehat.*
