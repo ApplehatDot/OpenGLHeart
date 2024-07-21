@@ -1,4 +1,4 @@
-# Kompilowanie OpenGL_Heart 
+# Kompilowanie OpenGL_Heart dla Win32
 Żeby skompilować to repozytorium, potrzebujesz środowiska.
 Użyjemy kompilatora <a href="https://sourceforge.net/projects/mingw/files/Installer/mingw-get-setup.exe/download">MinGW 6.2.0-1 win32</a>,
 jeżeli chcesz używać innego kompilatora, to użyj twoja decyzja (jednak zalecane jest użycie MinGW, z powodu biblioteki freeglut). Jako edytora użyjemy programu Code::blocks
