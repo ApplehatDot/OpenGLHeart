@@ -31,4 +31,4 @@ ostatnią rzeczą którą trzeba zrobić to dodane pliku```freeglut.dll``` do ta
   <img src="images/heartimg.png">
 </div>
 
-### jak będziesz potrzebował pomocy, napisz tutaj albo napisz do mnie na discordzie: *applehat.*
+### jak będziesz potrzebował pomocy, napisz tutaj w issues albo napisz do mnie na discordzie: *applehat.*
