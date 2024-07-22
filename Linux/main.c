@@ -1,4 +1,7 @@
+// OpenGL-Heart - main.c
+
 #include <GL/glut.h>
+#include <gtk/gtk.h>
 #include <math.h>
 #include <stdio.h>
 #include <string.h>
@@ -21,6 +24,8 @@
 // Krok rysowania
 #define STEP 0.01
 
+char AboutDescription[] = "Projekt OpenGL-Heart dla systemow rodziny GNU/Linux dystrybuowana na Licencji MIT:\n\nCopyright 2024 ApplehatDoesStuff\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the ,,Software''), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED,,AS IS'', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.";
+
 // Wartość a, którą użytkownik może zmieniać
 float a = 16.0f;
 char aValueString[50];  // Bufor na string reprezentujący wartość a
@@ -31,6 +36,28 @@ int currentColor = 1; // Domyślnie biały
 // Funkcja, którą będziemy rysować
 float func(float x, float a) {
     return sqrtf(fabs(x)) + 0.9f * sqrtf(3.3f - x * x) * sinf(a * M_PI * x);
+}
+
+// GTK_MessageBox("tytuł", "opis");
+
+int global_argc;
+char **global_argv;
+
+int GTK_MessageBox(const char *TITLE, const char *TEXT)
+{
+    GtkWidget *dialog;
+
+    //zanim użyjesz funkcji zdefiniuj globalne argc i argv!
+    gtk_init(&global_argc, &global_argv);
+    dialog = gtk_message_dialog_new(NULL,
+                                    GTK_DIALOG_DESTROY_WITH_PARENT,
+                                    GTK_MESSAGE_INFO,
+                                    GTK_BUTTONS_OK,
+                                    "%s", TEXT);
+    gtk_window_set_title(GTK_WINDOW(dialog), TITLE);
+
+    gtk_dialog_run(GTK_DIALOG(dialog));
+    gtk_widget_destroy(dialog);
 }
 
 void display() {
@@ -129,6 +156,9 @@ void keyboard(unsigned char key, int x, int y) {
         case 27: // Escape key
             exit(0);
             break;
+        case 'v':
+            GTK_MessageBox("o projekcie", AboutDescription);
+            break;
     }
     glutPostRedisplay();
 }
@@ -150,6 +180,10 @@ void setWindowIcon(Display *display, Window window) {
 }
 
 int main(int argc, char** argv) {
+
+    global_argc = argc;
+    global_argv = argv;
+
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
     glutInitWindowSize(800, 600);
